@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Đây là header gồm: sdt hỗ trợ, logo, tìm kiếm, yêu thích -->
+      <div class="box">
+        <div class="help"><a href="#">Ho tro: 0123456789</a></div>
+        <div class="logo">
+          <a href="../index.html"><img src="../imgs/logoTUBOY.jpg" alt="logo">
+          </a>
+        </div>
+        <div class="extention">
+          <div class="search">
+            <input type="text" name="" id="searching" placeholder="Tim kiem" />
+            <button type="submit" class="btn">
+              <span class="material-symbols-outlined">search</span>
+            </button>
+          </div>
+          <a href="../index.html"
+            ><span class="material-symbols-outlined">home</span></a
+          >
+          <a href="../front-end/login.html"
+            ><span class="material-symbols-outlined"> account_circle </span></a
+          >
+          <a href="#"
+            ><span class="material-symbols-outlined">favorite</span></a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- Đây là menu -->
+    <div class="sidebar">
+      <div class="navbar">
+        <ul>
+          <li><a href="#">Trang chu</a></li>
+          <li class="product">
+            <a href="" class="drop-nav">Product</a>
+            <div class="product-content">
+              <a href="#">sp 1</a>
+              <a href="#">sp 2</a>
+              <a href="#">sp 3</a>
+            </div>
+          </li>
+          <li><a href="">Sale</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <main>
+        <div class="login-container">
+            <form class="login-form" id="loginForm">
+                <h2>Login</h2>
+                <div class="input-box">
+                    <input type="text" id="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="register">
+                    <p>Ban chua co tai khoan ? <a href="./register.html">Dang ky</a></p>
+                </div>
+                <div class="foget-password">
+                    <p>Quen mat khau?</p>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <p id="error-message" class="error-message"></p>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="out">
+            <div class="about">
+                <h4>GIỚI THIỆU</h4>
+                <div class="line2"></div>
+                <p>Hộ kinh doanh Be YourSelf
+                    GPKD số 41A8049969 cấp ngày 30/3/2022 tại Sở kế hoạch và đầu tư Tp. HCM</p>
+                <p>Địa chỉ: 120 Trần Hưng Đạo, Phường Phạm Ngũ Lão, Quận 1, Tp. Hồ Chí Minh</p>
+                <p>Phone: <span>0933597986</span></p>
+                <p>Email: <span>themixvietnam@gmail.com</span></p>
+            </div>
+            <div class="chinhsach">
+                
+                <h4>Chính sách hỗ trợ</h4>
+                <div class="line2"></div>
+                <p>Chính sách đổi trả</p>
+                <p>Chính sách bảo mật</p>
+                <p>Hướng dẫn thanh toán</p>
+                <p>Chính sách kiểm hàng</p>
+                <p>Chính sách vận chuyển</p>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
+<script src="../js/login.js"></script>
