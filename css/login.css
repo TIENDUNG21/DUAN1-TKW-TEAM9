@@ -271,6 +271,9 @@ li.product {
 
 .foget-password {
     padding-bottom: 5px;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
 
 }
 
