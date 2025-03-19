@@ -36,7 +36,8 @@ main {
     margin-left: 10%;
     margin-right: 10%;
     background-color: #f1f1f1;
-  }
+
+}
 
 footer {
     background-color: rgb(66, 65, 65);
@@ -174,120 +175,172 @@ li.product {
     display: block;
 }
 
+.container {
+    display: inline-block;
+    max-width: 100%;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
 
-.login-container {
-    background-color: rgba(255, 255, 255, 0.2);
-    /* backdrop-filter: blur(15px); */
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+.product-details {
     display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    flex-direction: column-reverse;
-    /* width: 50%; */
-    margin-left: 350px;
-    margin-right: 350px;
-    margin-bottom: 50px;
+    gap: 20px;
 }
 
-.login-form h2 {
-    color: black;
-    text-align: center;
-    margin-bottom: 20px;
+.product-image img {
+    width: 350px;
+    height: auto;
+    border: 1px solid #ddd;
+    margin-right: 50px;
 }
 
-.input-box {
+.zoom-container {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
     position: relative;
+    border: 1px solid #ddd;
+}
+
+.zoom-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.zoom-container:hover img {
+    transform: scale(1.5);
+}
+
+.zoom-result {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 370px;
+    top: 0;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.product-info h1 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
-.input-box input {
-    width: 100%;
-    padding: 15px;
-    font-size: 18px;
-    color: black;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid black;
-    outline: none;
-    transition: all 0.3s;
+.total-price {
+    gap: 10px;
 }
 
-.input-box label {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    color: black;
-    transform: translateY(-50%);
-    font-size: 18px;
-    pointer-events: none;
-    transition: all 0.3s;
+.price {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.input-box input:focus~label,
-.input-box input:valid~label {
-    top: -5px;
-    font-size: 14px;
-    color: #9b59b6;
+.old-price {
+    font-size: 15px;
+    color: #696767;
+    text-decoration: line-through;
 }
 
-.login-btn {
-    width: 100%;
+.sizes {
+    margin-bottom: 20px;
+}
+
+.size-options button {
+    margin-right: 10px;
+}
+
+.add-see {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
     padding: 10px;
-    background-color: #9b59b6;
-    border: none;
-    border-radius: 25px;
-    color: white;
-    font-size: 18px;
+}
+
+.add-to-cart {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #000;
     cursor: pointer;
-    transition: background-color 0.3s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    transition: all ease-in-out 0.3s;
 }
 
-.login-btn:hover {
-    background-color: #71b7e6;
+.add-to-cart:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.1);
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+.see-detail {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #000;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    transition: all ease-in-out 0.3s;
 }
 
-.login-container {
-    animation: fadeIn 1s ease-in-out;
+.see-detail:hover {
+    background-color: green;
+    color: white;
+    transform: scale(1.1);
 }
 
-.register {
-    padding-bottom: 5px;
+.product-description {
+    margin-top: 20px;
 }
 
-.register a {
-    text-decoration: none;
-    color: #000;
-
+.product-description h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
-.register a:hover {
-    color: green;
+.product-description img {
+    margin-top: 20px;
+    width: 100%;
 }
 
-.foget-password {
-    padding-bottom: 5px;
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
-
+/* Related Products */
+.related-products {
+    margin-left: 20px;
 }
 
-.foget-password p:hover {
-    color: rgb(229, 107, 62);
+.related-products h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.related-products ul {
+    list-style: none;
+}
+
+.related-products ul li {
+    margin-bottom: 10px;
+}
+
+.introduction-product {
+    display: inline-block;
+    /* justify-content: center; */
+}
+
+.name-product {
+    font-size: 40px;
 }
 
 .out {
