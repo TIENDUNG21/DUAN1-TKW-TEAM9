@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../css/profile.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <header>
+        <!-- Đây là header gồm: sdt hỗ trợ, logo, tìm kiếm, yêu thích -->
+        <div class="box">
+          <div class="help"><a href="#">Hỗ trợ: 0123456789</a></div>
+          <div class="logo">
+            <a href="./index.html"><img src="../imgs/logoTUBOY.jpg" alt=""></a>
+          </div>
+          <div class="extention">
+            <div class="search">
+              <input type="text" name="" id="searching" placeholder="Tim kiem" />
+              <button type="submit" class="btn">
+                <span class="material-symbols-outlined">Search</span>
+              </button>
+            </div>
+            <a href="../index.html"
+              ><span class="material-symbols-outlined">Home</span></a
+            >
+            <a href="./front-end/login.html"
+              ><span class="material-symbols-outlined"> Account_circle </span></a
+            >
+            <a href="#"
+              ><span class="material-symbols-outlined">
+                shopping_cart
+                </span></a
+            >
+          </div>
+        </div>
+      </header>
+      <!-- Đây là menu -->
+      <div class="sidebar">
+        <div class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li class="product">
+              <a href="" class="drop-nav">Product</a>
+              <div class="product-content">
+                <a href="#">Giày Nam</a>
+                <a href="#">Giày Nữ</a>
+                <a href="#">Giày Thể thao</a>
+              </div>
+            </li>
+            <li><a href="">Sale</a></li>
+            <li><a href="">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    <main>
+        <div class="profile-container">
+            <h2>Hồ Sơ Của Tôi</h2>
+            <p>Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="username">Tên đăng nhập</label>
+                    <input type="text" id="username" value="username" readonly>
+                    <small>Tên Đăng nhập chỉ có thể thay đổi một lần.</small>
+                </div>
+    
+                <div class="form-group">
+                    <label for="name">Tên</label>
+                    <input type="text" id="name" placeholder="Nhập tên của bạn">
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" value="email" readonly>
+                    <a href="#">Thay Đổi</a>
+                </div>
+    
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+                    <a href="#">Thêm</a>
+                </div>
+    
+                <div class="form-group">
+                    <label>Giới tính</label>
+                    <label><input type="radio" name="gender" value="male"> Nam</label>
+                    <label><input type="radio" name="gender" value="female"> Nữ</label>
+                    <label><input type="radio" name="gender" value="other"> Khác</label>
+                </div>
+    
+                <div class="form-group">
+                    <label>Ngày sinh</label>
+                    <div class="birthday-select">
+                        <select>
+                            <option>Ngày</option>
+                        </select>
+                        <select>
+                            <option>Tháng</option>
+                        </select>
+                        <select>
+                            <option>Năm</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label>Ảnh đại diện</label>
+                    <input type="file" accept=".jpg, .jpeg, .png">
+                    <small>Dung lượng file tối đa 1 MB, định dạng: .JPEG, .PNG</small>
+                </div>
+    
+                <button type="submit">Lưu</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="out">
+            <div class="about">
+                <h4>GIỚI THIỆU</h4>
+                <div class="line2"></div>
+                <p>Hộ kinh doanh Be YourSelf
+                    GPKD số 41A8049969 cấp ngày 30/3/2022 tại Sở kế hoạch và đầu tư Tp. HCM</p>
+                <p>Địa chỉ: 120 Trần Hưng Đạo, Phường Phạm Ngũ Lão, Quận 1, Tp. Hồ Chí Minh</p>
+                <p>Phone: <span>0933597986</span></p>
+                <p>Email: <span>ShopTuBoy@gmail.com</span></p>
+            </div>
+            <div class="chinhsach">
+                
+                <h4>Chính sách hỗ trợ</h4>
+                <div class="line2"></div>
+                <p>Chính sách đổi trả</p>
+                <p>Chính sách bảo mật</p>
+                <p>Hướng dẫn thanh toán</p>
+                <p>Chính sách kiểm hàng</p>
+                <p>Chính sách vận chuyển</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/cartegory.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Đây là header gồm: sdt hỗ trợ, logo, tìm kiếm, yêu thích -->
+      <div class="box">
+        <div class="help"><a href="#">Ho tro: 0123456789</a></div>
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../imgs/logoTUBOY.jpg" alt="logo" />
+          </a>
+        </div>
+        <div class="extention">
+          <div class="search">
+            <input type="text" name="" id="searching" placeholder="Tim kiem" />
+            <button type="submit" class="btn">
+              <span class="material-symbols-outlined">search</span>
+            </button>
+          </div>
+          <a href="../index.html"
+            ><span class="material-symbols-outlined">home</span></a
+          >
+          <a href="../front-end/login.html"
+            ><span class="material-symbols-outlined"> account_circle </span></a
+          >
+          <a href="#"
+            ><span class="material-symbols-outlined"> shopping_cart </span></a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- Đây là menu -->
+    <div class="sidebar">
+      <div class="navbar">
+        <ul>
+          <li><a href="../index.html">Trang chu</a></li>
+          <li class="product">
+            <a href="" class="drop-nav">Product</a>
+            <div class="product-content">
+              <a href="#">sp 1</a>
+              <a href="#">sp 2</a>
+              <a href="#">sp 3</a>
+            </div>
+          </li>
+          <li><a href="">Sale</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <main>
+        <div class="cart-container">
+            <div class="cart">
+                <h2>Giỏ hàng</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="product">
+                                <img src="../imgs/nikeaf1.png" alt="Nike Air Jordan 1 Mid Inside Out">
+                                <span>Nike Air Force 1</span>
+                            </td>
+                            <td>1,700,000d</td>
+                            <td>
+                                <input type="number" value="1" min="1">
+                            </td>
+                            <td>1,700,000d</td>
+                            <td class="remove">
+                                <a href=""><span class="material-symbols-outlined">
+                                    delete
+                                    </span></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="cart-buttons">
+                    <button class="continue-shopping">Mua tiếp</button>
+                    <button class="update-cart">Cập nhật giỏ hàng</button>
+                </div>
+            </div>
+            <!-- Thanh toan -->
+            <div class="order-summary">
+                <h2>Đơn hàng</h2>
+                <div class="total">
+                    <span>Tổng tiền</span>
+                    <span class="total-amount">1,700,000d</span>
+                </div>
+                <button class="checkout-btn">Thanh toán</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="out">
+          <div class="about">
+            <h4>GIỚI THIỆU</h4>
+            <div class="line2"></div>
+            <p>
+              Hộ kinh doanh Be YourSelf GPKD số 41A8049969 cấp ngày 30/3/2022 tại
+              Sở kế hoạch và đầu tư Tp. HCM
+            </p>
+            <p>
+              Địa chỉ: 120 Trần Hưng Đạo, Phường Phạm Ngũ Lão, Quận 1, Tp. Hồ Chí
+              Minh
+            </p>
+            <p>Phone: <span>0933597986</span></p>
+            <p>Email: <span>themixvietnam@gmail.com</span></p>
+          </div>
+          <div class="chinhsach">
+            <h4>Chính sách hỗ trợ</h4>
+            <div class="line2"></div>
+            <p>Chính sách đổi trả</p>
+            <p>Chính sách bảo mật</p>
+            <p>Hướng dẫn thanh toán</p>
+            <p>Chính sách kiểm hàng</p>
+            <p>Chính sách vận chuyển</p>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
